@@ -1,0 +1,27 @@
+version: '3.8'
+
+services:
+  web:
+    build: .
+    container_name: splinter
+    ports:
+      - "8080:80"
+    depends_on:
+      - db
+    networks:
+      - lab-network
+
+  db:
+    image: mysql:5.7
+    container_name: splinter-db
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: lab_db
+      MYSQL_USER: lab_user
+      MYSQL_PASSWORD: lab_pass
+    networks:
+      - lab-network
+
+networks:
+  lab-network:
+    driver: bridge
