@@ -17,9 +17,9 @@
 | Lab | Preview | Description | Difficulty |
 |-----|---------|-------------|:----------:|
 | **Abby's Lab** | <img src="https://s3.parrot-ctfs.com/hacking/machines/abby_lab_capture_the_flag.png" width="80"/> | Break through Abby's IPS to breach her system. | Hard |
+| **Backdrop** | <img src="https://s3.parrot-ctfs.com/669af11cc9b6c8.16540122.png" width="80"/> | Dive into the Backdrop CMS challenge! Unravel hidden secrets and master this unique CMS. | Easy |
 | **Blogger** | <img src="https://s3.parrot-ctfs.com/hacking/machines/blogger_hacking_labs_capture_the_flag.png" width="80"/> | Perform a penetration test against this blog. | Medium |
 | **Cloud Admin** | <img src="https://s3.parrot-ctfs.com/66ae0cca784ba1.74791678.png" width="80"/> | Dive into cloud security and uncover vulnerabilities in cloud and server environments. | Medium |
-| **Dentist Office** | <img src="https://s3.parrot-ctfs.com/hacking/machines/dentist_office_hacking_beginner_ctfs.png" width="80"/> | Sharpen your skills and hack this website. | Easy |
 | **Marketer** | <img src="https://s3.parrot-ctfs.com/6672046276f907.04566630.png" width="80"/> | Attack this marketing provider using your file upload and cryptography skills. | Medium |
 | **Mr Robot V2** | <img src="https://s3.parrot-ctfs.com/hacking/machines/mr_robot_hacking_capture_the_flag.png" width="80"/> | FSociety's task: Hack Ecorp and their employees. | Medium |
 | **Pet Shop** | <img src="https://s3.parrot-ctfs.com/hacking/machines/pet_shop_hacking_labs_capture_the_flags.png" width="80"/> | Find your way into this old, unfinished website. | Easy |
@@ -33,9 +33,9 @@
 | Lab | Root Flag | User Flag |
 |-----|-----------|-----------|
 | Abby's Lab | `aHR0cHM6Ly93d3cueW91dHViZS5jb20vd2F0Y2g/dj1tc1g0b0FYcHZVRQ==` | `Ik5vIHdheSEgSSdtIGdldHRpbmcgaGFja2VkISIgLSBBYmJ5` |
+| Backdrop | `58772425df8d8d2fd039bf9db9822c68ce9c51e7c1336e2738e1bf62ccb3c486` | `736773706ab14f439f63a118380d1390e415146c85b4b54c41e38616158d8d84` |
 | Blogger | `01cd7b3d09f84463806ac226099d725745c0b6d1c0fb6da068e484da2a5c2167` | `07c68b84d3f0e7475cbe1b760683f4a9c310592a7154d51e3e740a004a69478a` |
 | Cloud Admin | `6e7c0f4538ec50f4ad94b3d6951d89edf17fa0bb64a7c8271e18f8c8f26f7185s` | `c30933d39bab88fe51635d0b9b8af0fa012b3d01ac065fd5d85e248162c7f6ad` |
-| Dentist Office | `318fa5ec4d9403186175de04abbdcd96d7798a583d160d0b0c6765d2a71410fa` | `b78e381e360da323290665f09339b16f567bb42a4904895221c00fcd147f3d7b` |
 | Marketer | `13bf27433a57e512f8e3b9122a9065c1477ab508c28abb36e31c931a5e8dce0e` | `2ff1395bb6c74b6c1e00a789277edf69390ec4b5d760c9b6e38d0239d71fb92d` |
 | Mr Robot V2 | `f7078b7bde35e8cf24d622aeb3c3081bc0a73f2217d1ebd550c65e36f6c22362` | `01ff0430f950192ac9ff72c348b6ebeba8b62c5a18fed92a04eff05708284f2d` |
 | Pet Shop | `25eaff4f14c33c598c8c2397024f6d73263618bda147c15e7c16c3806dbd848b` | `c5f14388a245cab785def0524cf8566e505b73401441fdf6a3970493189c74a5` |
