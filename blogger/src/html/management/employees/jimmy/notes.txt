@@ -1,0 +1,9 @@
+# reminder
+
+remind jimmy that he has a ssh back up file ( /home/jimmy/ssh/id_rsa.bak ) in his home directory 
+and he needs to remove that for security purposes
+
+
+# reminder
+
+make sure that jimmy is clocking out on time since he is suspected to be doing time fraud
