@@ -10,7 +10,7 @@ RUN a2enmod rewrite
 WORKDIR /var/www/html
 
 # Copy source code
-COPY src/ /var/www/html/
+COPY src/html/ /var/www/html/
 
 # Set permissions
 RUN chown -R www-data:www-data /var/www/html \
