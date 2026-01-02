@@ -3,7 +3,7 @@ version: '3.8'
 services:
   web:
     build: .
-    container_name: abbys-lab
+    container_name: cloudadmin
     ports:
       - "8080:80"
     depends_on:
@@ -13,7 +13,7 @@ services:
 
   db:
     image: mysql:5.7
-    container_name: abbys-lab-db
+    container_name: cloudadmin-db
     environment:
       MYSQL_ROOT_PASSWORD: root
       MYSQL_DATABASE: lab_db

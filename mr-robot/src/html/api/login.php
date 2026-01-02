@@ -8,7 +8,7 @@ ini_set('max_execution_time', 100); //300 seconds = 5 minutes. In case if your C
 error_reporting(E_ALL);//NOT FOR PRODUCTION
 
 
-$servername = "localhost";
+$servername = "db";
 $dbusername = "newuser";
 $dbpassword = "hdgjsdhgjsdhgjsdhgjsdhgljsdhgljsd";
 $dbname = "ourdatabase";

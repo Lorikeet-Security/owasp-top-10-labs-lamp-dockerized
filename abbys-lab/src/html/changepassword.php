@@ -5,7 +5,7 @@ ini_set('display_startup_errors', 1);//NOT FOR PRODUCTION
 ini_set('max_execution_time', 100); //300 seconds = 5 minutes. In case if your CURL is slow and is loading too much (Can be IPv6 problem)
 error_reporting(E_ALL);//NOT FOR PRODUCTION
 
-$servername = "localhost";
+$servername = "db";
 $username = "php";
 $password = "zYPw7wVH7c2S74vXpLviOjavdCnkuH";
 $dbname = "ncis";

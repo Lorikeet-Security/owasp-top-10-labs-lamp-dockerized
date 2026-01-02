@@ -1,8 +1,9 @@
 <?php
 session_start();
-define("ROOT_URL", "http://10.15.1.0/");
+$root_url = $_SERVER['HTTP_HOST'];
+define("ROOT_URL", "http://" . $root_url . "/");
 define('DB_HOST', 'localhost');
-define('DB_USER', 'underemployed');
-define('DB_PASS', 'admin1234');
-define('DB_NAME', 'blog');
+define('DB_USER', 'php');
+define('DB_PASS', 'zYPw7wVH7c2S74vXpLviOjavdCnkuH');
+define('DB_NAME', 'lab_db');
 

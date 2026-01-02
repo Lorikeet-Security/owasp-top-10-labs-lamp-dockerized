@@ -16,4 +16,12 @@ COPY src/ /var/www/html/
 RUN chown -R www-data:www-data /var/www/html \
     && chmod -R 755 /var/www/html
 
+# Inject flags
+RUN echo "9672a0e42813d0de7de380cc99fdd900e31e39280e0445b2a3e28ffb864ef27d" > /root/root.txt && \
+    chmod 600 /root/root.txt && \
+    mkdir -p /home/www-data && \
+    echo "4833141889debce0c37dfb185a6fd7b5e9467a6e86eaf01e17e416e1e2530e6f" > /home/www-data/user.txt && \
+    chown -R www-data:www-data /home/www-data && \
+    chmod 644 /home/www-data/user.txt
+
 EXPOSE 80

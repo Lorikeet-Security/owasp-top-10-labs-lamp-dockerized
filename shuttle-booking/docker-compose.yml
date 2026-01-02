@@ -16,9 +16,11 @@ services:
     container_name: shuttle-booking-db
     environment:
       MYSQL_ROOT_PASSWORD: root
-      MYSQL_DATABASE: lab_db
-      MYSQL_USER: lab_user
-      MYSQL_PASSWORD: lab_pass
+      MYSQL_DATABASE: shuttle
+      MYSQL_USER: dev
+      MYSQL_PASSWORD: bob123$
+    volumes:
+      - ./src/sql:/docker-entrypoint-initdb.d
     networks:
       - lab-network
 

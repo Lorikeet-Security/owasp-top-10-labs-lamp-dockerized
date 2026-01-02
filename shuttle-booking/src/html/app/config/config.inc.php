@@ -1,6 +1,6 @@
 <?php
 
-if (!defined("PJ_HOST")) define("PJ_HOST", "localhost");
+if (!defined("PJ_HOST")) define("PJ_HOST", "db");
 if (!defined("PJ_USER")) define("PJ_USER", "dev");
 if (!defined("PJ_PASS")) define("PJ_PASS", "bob123\$");
 if (!defined("PJ_DB")) define("PJ_DB", "shuttle");

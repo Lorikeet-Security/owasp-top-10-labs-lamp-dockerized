@@ -1,6 +1,6 @@
 <?php
 
-$servername = 'localhost'; 
+$servername = 'db'; 
 $dbusername = 'dev';
 $dbpassword = 'bob123$';
 $dbname = "shuttle";

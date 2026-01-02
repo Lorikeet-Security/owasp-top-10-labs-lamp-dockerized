@@ -2,7 +2,7 @@
 
 session_start();
 
-$servername = "localhost";
+$servername = "db";
 $username = "php";
 $password = "zYPw7wVH7c2S74vXpLviOjavdCnkuH";
 $dbname = "ncis";

@@ -16,9 +16,11 @@ services:
     container_name: mr-robot-db
     environment:
       MYSQL_ROOT_PASSWORD: root
-      MYSQL_DATABASE: lab_db
-      MYSQL_USER: lab_user
-      MYSQL_PASSWORD: lab_pass
+      MYSQL_DATABASE: ourdatabase
+      MYSQL_USER: newuser
+      MYSQL_PASSWORD: hdgjsdhgjsdhgjsdhgjsdhgljsdhgljsd
+    volumes:
+      - ./src/sql:/docker-entrypoint-initdb.d
     networks:
       - lab-network
 
