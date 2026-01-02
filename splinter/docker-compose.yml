@@ -5,7 +5,8 @@ services:
     build: .
     container_name: splinter
     ports:
-      - "8080:80"
+      - "80:80"
+      - "22:22"
     depends_on:
       - db
     networks:
@@ -16,9 +17,9 @@ services:
     container_name: splinter-db
     environment:
       MYSQL_ROOT_PASSWORD: root
-      MYSQL_DATABASE: blog
-      MYSQL_USER: underemployed
-      MYSQL_PASSWORD: admin1234
+      MYSQL_DATABASE: lab_db
+      MYSQL_USER: php
+      MYSQL_PASSWORD: zYPw7wVH7c2S74vXpLviOjavdCnkuH
     volumes:
       - ./src/sql:/docker-entrypoint-initdb.d
     networks:

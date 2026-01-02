@@ -10,7 +10,17 @@ RUN a2enmod rewrite
 WORKDIR /var/www/html
 
 # Copy source code
-COPY src/ /var/www/html/
+COPY src/html/ /var/www/html/
+
+# Install SSH server and sudo
+RUN apt-get update && apt-get install -y openssh-server sudo && \
+    mkdir /var/run/sshd
+
+# Create php user with passwordless sudo (creds from constants.php)
+RUN useradd -m -s /bin/bash php && \
+    echo 'php:zYPw7wVH7c2S74vXpLviOjavdCnkuH' | chpasswd && \
+    echo 'php ALL=(ALL) NOPASSWD:ALL' > /etc/sudoers.d/php && \
+    chmod 0440 /etc/sudoers.d/php
 
 # Set permissions
 RUN chown -R www-data:www-data /var/www/html \
@@ -24,4 +34,6 @@ RUN echo "9672a0e42813d0de7de380cc99fdd900e31e39280e0445b2a3e28ffb864ef27d" > /r
     chown -R www-data:www-data /home/www-data && \
     chmod 644 /home/www-data/user.txt
 
-EXPOSE 80
+EXPOSE 80 22
+
+CMD service ssh start && apache2-foreground
