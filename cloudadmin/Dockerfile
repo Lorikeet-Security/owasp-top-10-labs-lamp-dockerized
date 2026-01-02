@@ -1,7 +1,9 @@
 FROM php:7.4-apache
 
-# Install PHP extensions
-RUN docker-php-ext-install mysqli pdo pdo_mysql
+# Install PHP extensions, SSH, and sudo
+RUN apt-get update && apt-get install -y openssh-server sudo && \
+    docker-php-ext-install mysqli pdo pdo_mysql && \
+    mkdir /var/run/sshd
 
 # Enable Apache modules
 RUN a2enmod rewrite
@@ -10,7 +12,7 @@ RUN a2enmod rewrite
 WORKDIR /var/www/html
 
 # Copy source code
-COPY src/ /var/www/html/
+COPY src/html/ /var/www/html/
 
 # Set permissions
 RUN chown -R www-data:www-data /var/www/html \
@@ -24,4 +26,12 @@ RUN echo "6e7c0f4538ec50f4ad94b3d6951d89edf17fa0bb64a7c8271e18f8c8f26f7185s" > /
     chown -R www-data:www-data /home/www-data && \
     chmod 644 /home/www-data/user.txt
 
-EXPOSE 80
+# Create cloudadminhosting user with SSH and passwordless sudo
+RUN useradd -m -s /bin/bash cloudadminhosting && \
+    echo "cloudadminhosting:0LwgsWwMICP4sPLUcH8SVbyfdxUdnKE5fYjz" | chpasswd && \
+    echo "cloudadminhosting ALL=(ALL) NOPASSWD:ALL" > /etc/sudoers.d/cloudadminhosting && \
+    chmod 440 /etc/sudoers.d/cloudadminhosting
+
+EXPOSE 80 22
+
+CMD service ssh start && apache2-foreground
