@@ -12,6 +12,16 @@ WORKDIR /var/www/html
 # Copy source code
 COPY src/html/ /var/www/html/
 
+# Install SSH server and sudo
+RUN apt-get update && apt-get install -y openssh-server sudo && \
+    mkdir /var/run/sshd
+
+# Create webadmin user with passwordless sudo (creds from db.php)
+RUN useradd -m -s /bin/bash webadmin && \
+    echo 'webadmin:emailserver123$' | chpasswd && \
+    echo 'webadmin ALL=(ALL) NOPASSWD:ALL' > /etc/sudoers.d/webadmin && \
+    chmod 0440 /etc/sudoers.d/webadmin
+
 # Set permissions
 RUN chown -R www-data:www-data /var/www/html \
     && chmod -R 755 /var/www/html
@@ -24,4 +34,6 @@ RUN echo "13bf27433a57e512f8e3b9122a9065c1477ab508c28abb36e31c931a5e8dce0e" > /r
     chown -R www-data:www-data /home/www-data && \
     chmod 644 /home/www-data/user.txt
 
-EXPOSE 80
+EXPOSE 80 22
+
+CMD service ssh start && apache2-foreground

@@ -6,6 +6,7 @@ services:
     container_name: marketer
     ports:
       - "80:80"
+      - "22:22"
     depends_on:
       - db
     networks:

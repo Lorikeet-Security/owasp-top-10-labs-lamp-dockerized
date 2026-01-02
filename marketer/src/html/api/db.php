@@ -1,6 +1,6 @@
 <?php
 
-$server = "localhost";
+$server = "marketer-db";
 $user = "webadmin";
 $pass = "emailserver123$";
 $db = "marketer";
