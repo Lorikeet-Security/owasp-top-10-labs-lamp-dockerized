@@ -1,0 +1,1 @@
+<?php include PJ_PLUGINS_PATH . 'pjBase/views/pjLayouts/pjActionBase.php'; ?>

@@ -1,0 +1,62 @@
+/* ==========================================================================
+	#General
+========================================================================== */
+#pjWrapper * { font-family: 'Source Sans Pro', sans-serif; }
+#pjWrapper .fa { font-family: 'FontAwesome'; }
+#pjWrapper .glyphicon { font-family: 'Glyphicons Halflings'; }
+
+#pjWrapper { background-color: #222; }
+
+#pjWrapper .pjSbs-car-meta li span,
+#pjWrapper a { color: #595758; }
+
+#pjWrapper .btn-primary { background-color: #333; border-color: #222; color: #fff; }
+#pjWrapper .btn-primary:hover { background-color: #222; }
+
+#pjWrapper .btn-secondary,
+#pjWrapper .pjSbs-head { background-color: #595758; border-color: #0f0d0e; }
+
+#pjWrapper .btn-secondary:hover { background-color: #0f0d0e; }
+
+#pjWrapper .btn .glyphicon { color: #595758; }
+
+#pjWrapper .pjSbs-body { background-color: #444; border-color: #444;}
+
+#pjWrapper .pjSbs-box { background-color: #ddd; }
+
+#pjWrapper .pjSbs-car-meta li span { color: #222; }
+
+#pjWrapper .pjSbs-service-list,
+#pjWrapper .pjSbs-service-info,
+#pjWrapper .pjSbs-subtotal { color: #fff; }
+
+html[dir="rtl"] #pjWrapper .input-group-addon:first-child,
+#pjWrapper .pjSbs-head .btn-default,
+#pjWrapper .pjSbs-spinner-result,
+#pjWrapper .pjSbs-spinner .btn:hover, 
+#pjWrapper .pjSbs-spinner .btn,
+#pjWrapper .input-group-addon,
+#pjWrapper .pjSbs-subtotal p,
+#pjWrapper .pjSbs-extras li + li,
+#pjWrapper .pjSbs-box,
+#pjWrapper .form-control,
+#pjWrapper .pjSbs-body { border-color: #333; }
+
+#pjWrapper .bootstrap-datetimepicker-widget table td span.active,
+#pjWrapper .bootstrap-datetimepicker-widget table td.active, 
+#pjWrapper .bootstrap-datetimepicker-widget table td.active:hover { background-color: #222; }  
+
+#pjWrapper .bootstrap-datetimepicker-widget table td.today:before { border-color: rgba(0, 0, 0, 0.2) transparent #222; }
+
+#pjWrapper .hours .hour-booked a { color: #fff; }
+#pjWrapper .hours .hour-available a { color: #595758; }
+
+#pjWrapper .pjSbs-price { border-color: #595758; background-color: #595758; color: #fff;} 
+
+#pjWrapper .pjSbs-action-select .glyphicon {  }
+
+#pjWrapper .pjSbs-action-radio.active span:after,
+#pjWrapper .pjSbs-action-radio:hover span:after { background-color: #595758; }
+
+#pjWrapper .pjSbs-action-radio.active span,
+#pjWrapper .pjSbs-action-radio:hover span { border-color: #595758; }

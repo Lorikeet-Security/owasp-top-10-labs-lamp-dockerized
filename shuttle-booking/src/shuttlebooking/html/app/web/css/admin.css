@@ -1,0 +1,37 @@
+.pjSbsLineTable span.mr-sm-2{
+	display: inline-block;
+	width: 80px;
+}
+.pjSbsLineTable .form-inline.first{
+	margin-bottom: 5px;
+}
+.pjSbsLineTable .form-inline span.help-block{
+	display: none;
+}
+
+.normal-label {
+  font-weight: normal;
+  margin-right: 15px;
+}
+#pjTimeWrapper.form-horizontal{
+	overflow: hidden;
+}
+.form-horizontal .clockpicker{
+	float: left;
+	margin-right: 5px;
+	width: 130px;
+}
+.form-horizontal .pjTimeCell{
+	float: left;
+	margin-right: 10px;
+}
+
+.inspinia-timeline .timeline-item{
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+	border-bottom: dashed 1px #c0c0c0;
+}
+.inspinia-timeline .timeline-item:last-of-type{
+	margin-bottom: 10px;
+	border-bottom: none;
+}

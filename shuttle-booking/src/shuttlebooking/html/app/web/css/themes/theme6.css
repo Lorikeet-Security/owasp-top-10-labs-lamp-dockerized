@@ -1,0 +1,47 @@
+/* ==========================================================================
+	#General
+========================================================================== */
+#pjWrapper * { font-family: 'PT Serif', serif; }
+#pjWrapper .fa { font-family: 'FontAwesome'; }
+#pjWrapper .glyphicon { font-family: 'Glyphicons Halflings'; }
+
+#pjWrapper a,
+#pjWrapper .input-group-addon,
+#pjWrapper .pjSbs-car-meta li span,
+#pjWrapper .btn .glyphicon { color: #1ab4c0; }
+
+#pjWrapper a:hover { color: #189aa4; }
+
+#pjWrapper .btn-primary { background-color: #1ab4c0; border-color: #189aa4; color: #fff; }
+#pjWrapper .btn-primary:hover { background-color: #189aa4; }
+
+#pjWrapper .btn-secondary,
+#pjWrapper .pjSbs-head { background-color: #e37d4c; border-color: #c36d44; }
+
+#pjWrapper .btn-secondary:hover { background-color: #c36d44; }
+
+#pjWrapper .bootstrap-datetimepicker-widget table td span.active,
+#pjWrapper .bootstrap-datetimepicker-widget table td.active, 
+#pjWrapper .bootstrap-datetimepicker-widget table td.active:hover { background-color: #1ab4c0; }
+
+#pjWrapper .bootstrap-datetimepicker-widget table td.today:before { border-color: rgba(0, 0, 0, 0.2) transparent #1ab4c0; }
+
+#pjWrapper .btn,
+#pjWrapper .btn:hover { color: #fff; }
+
+#pjWrapper .pjSbs-head .btn,
+#pjWrapper .pjSbs-head .btn:hover { color: #333; }
+
+#pjWrapper .hours .hour-booked { border-color: #1ab4c0; }
+#pjWrapper .hours .hour-booked a { color: #fff; background-color: #1ab4c0; }
+
+#pjWrapper .pjSbs-action-select .glyphicon,
+#pjWrapper .hours .hour-available a { color: #1ab4c0; }
+
+#pjWrapper .pjSbs-price { border-color: #1ab4c0; background-color: #1ab4c0; color: #fff;} 
+
+#pjWrapper .pjSbs-action-radio.active span:after,
+#pjWrapper .pjSbs-action-radio:hover span:after { background-color: #1ab4c0; }
+
+#pjWrapper .pjSbs-action-radio.active span,
+#pjWrapper .pjSbs-action-radio:hover span { border-color: #1ab4c0; }

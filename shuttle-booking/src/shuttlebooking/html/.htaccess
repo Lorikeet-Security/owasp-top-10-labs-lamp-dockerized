@@ -1,0 +1,46 @@
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  RewriteCond %{REQUEST_METHOD} ^(TRACE|TRACK)
+  RewriteRule .* - [F]
+  
+  RewriteCond %{ENV:REDIRECT_STATUS} 200
+  RewriteRule .* - [L]
+  
+  RewriteCond %{QUERY_STRING} _escaped_fragment_=(.*)
+  RewriteRule ^index.php index.php?controller=pjFrontPublic&action=pjActionRouter&_escaped_fragment_=%1 [L,NC]
+  RewriteRule ^authorize-iframe-communicator\.html$ index.php?controller=pjAuthorize&action=pjActionIframeCommunicator [L,NC,QSA]
+</IfModule>
+
+Options -Indexes
+ServerSignature Off
+
+<IfModule mod_headers.c>
+  Header unset X-Powered-By
+</IfModule>
+
+<IfModule php5_module>
+  php_value session.cookie_httponly true
+</IfModule>
+
+<IfModule mod_mime.c>
+  AddType application/vnd.ms-fontobject    .eot
+  AddType application/x-font-opentype      .otf
+  AddType image/svg+xml                    .svg
+  AddType application/x-font-ttf           .ttf
+  AddType application/font-woff            .woff
+  AddType application/font-woff2           .woff2
+</IfModule>
+
+<FilesMatch "\.(?i)(ttf|otf|woff2?|eot|svg)$">
+  <IfModule mod_headers.c>
+    Header set Access-Control-Allow-Origin "*"
+  </IfModule>
+</FilesMatch>
+
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html application/x-javascript text/css application/javascript text/javascript text/plain text/xml application/json application/vnd.ms-fontobject application/x-font-opentype application/x-font-truetype application/x-font-ttf application/xml font/eot font/opentype font/otf image/svg+xml image/vnd.microsoft.icon
+  <FilesMatch "\.(?i)(js|css)$">
+    SetOutputFilter DEFLATE
+  </FilesMatch>
+</IfModule>

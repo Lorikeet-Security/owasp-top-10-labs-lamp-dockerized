@@ -1,0 +1,6 @@
+
+START TRANSACTION;
+
+ALTER TABLE `plugin_payment_options` MODIFY `tz` VARCHAR(255) DEFAULT NULL;
+
+COMMIT;

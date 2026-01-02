@@ -1,0 +1,65 @@
+/* ==========================================================================
+	#General
+========================================================================== */
+#pjWrapper * { font-family: 'Raleway', sans-serif; }
+#pjWrapper .fa { font-family: 'FontAwesome'; }
+#pjWrapper .glyphicon { font-family: 'Glyphicons Halflings'; }
+
+#pjWrapper .pjSbs-car-meta li span,
+#pjWrapper a,
+#pjWrapper .input-group-addon,
+#pjWrapper .btn .glyphicon { color: #d66e3b; }
+
+#pjWrapper a:hover { color: #ba5e34; }
+
+#pjWrapper .btn-primary { background-color: #d66e3b; border-color: #ba5e34; color: #fff;}
+#pjWrapper .btn-primary:hover { background-color: #ba5e34; }
+
+#pjWrapper .pjSbs-distance strong,
+#pjWrapper .pjSbs-price,
+#pjWrapper .btn-secondary,
+#pjWrapper .pjSbs-head { background-color: #756556; border-color: #625548; }
+
+#pjWrapper .btn-secondary:hover { background-color: #625548; }
+
+#pjWrapper .pjSbs-service-list-row + .pjSbs-service-list-row,
+#pjWrapper .pjSbs-spinner-result,
+#pjWrapper .pjSbs-spinner .btn:hover, 
+#pjWrapper .pjSbs-spinner .btn,
+#pjWrapper .input-group-addon,
+#pjWrapper .pjSbs-subtotal p,
+#pjWrapper .pjSbs-extras li + li,
+#pjWrapper .pjSbs-box,
+#pjWrapper .form-control,
+#pjWrapper .pjSbs-body { border-color: #cab29b; }
+
+#pjWrapper .pjSbs-distance strong,
+#pjWrapper .pjSbs-price,
+#pjWrapper .btn,
+#pjWrapper .btn:hover { color: #fff; }
+
+#pjWrapper .pjSbs-head .btn-default,
+#pjWrapper .pjSbs-head .form-control { background-color: rgba(0,0,0,.05); border-color: #625548; color: #fff; }
+
+#pjWrapper .pjSbs-head .dropdown-menu { background-color: #756556; }
+#pjWrapper .pjSbs-head .dropdown-menu li a:hover { background-color: #d66e3b; color: #fff;}
+
+#pjWrapper .bootstrap-datetimepicker-widget table td span.active,
+#pjWrapper .bootstrap-datetimepicker-widget table td.active, 
+#pjWrapper .bootstrap-datetimepicker-widget table td.active:hover { background-color: #d66e3b; }
+
+#pjWrapper .bootstrap-datetimepicker-widget table td.today:before { border-color: rgba(0, 0, 0, 0.2) transparent #d66e3b; }
+
+#pjWrapper .hours .hour-booked { border-color: #d66e3b; }
+#pjWrapper .hours .hour-booked a { color: #fff; background-color: #d66e3b; }
+
+#pjWrapper .pjSbs-action-select .glyphicon,
+#pjWrapper .hours .hour-available a { color: #d66e3b; }
+
+#pjWrapper .pjSbs-price { border-color: #d66e3b; background-color: #d66e3b; color: #fff;} 
+
+#pjWrapper .pjSbs-action-radio.active span:after,
+#pjWrapper .pjSbs-action-radio:hover span:after { background-color: #d66e3b; }
+
+#pjWrapper .pjSbs-action-radio.active span,
+#pjWrapper .pjSbs-action-radio:hover span { border-color: #d66e3b; }

@@ -1,0 +1,4 @@
+@CHARSET "UTF-8";
+.wizard > .steps > ul > li {
+  width: 16.6666%;
+}

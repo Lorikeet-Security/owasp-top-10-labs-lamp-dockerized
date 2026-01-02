@@ -1,0 +1,49 @@
+/* ==========================================================================
+	#General
+========================================================================== */
+#pjWrapper * { font-family: 'Lato', sans-serif; }
+#pjWrapper .fa { font-family: 'FontAwesome'; }
+#pjWrapper .glyphicon { font-family: 'Glyphicons Halflings'; }
+
+#pjWrapper a,
+#pjWrapper .input-group-addon,
+#pjWrapper .btn .glyphicon { color: #ecbd1c; }
+
+#pjWrapper a:hover { color: #d5a80f; }
+
+#pjWrapper .btn-primary { background-color: #ecbd1c; border-color: #d5a80f; }
+#pjWrapper .btn-primary:hover { background-color: #d5a80f; }
+
+#pjWrapper .pjSbs-head { background-color: #303030; border-color: #303030; }
+
+#pjWrapper .btn-secondary { background-color: #767575; border-color: #6c6867; }
+#pjWrapper .btn-secondary:hover { background-color: #6c6867; }
+
+#pjWrapper .btn,
+#pjWrapper .btn:hover { color: #fff; }
+
+#pjWrapper .pjSbs-body { background-color: #f3f1f2; }
+
+#pjWrapper .pjSbs-head .form-control,
+#pjWrapper .btn-default { background-color: #404040; color: #fff; border-color: #585656; }
+
+#pjWrapper .pjSbs-head .dropdown-menu { background-color: #404040; }
+#pjWrapper .pjSbs-head .dropdown-menu li a:hover { background-color: #333; }
+
+#pjWrapper .bootstrap-datetimepicker-widget table td span.active,
+#pjWrapper .bootstrap-datetimepicker-widget table td.active, 
+#pjWrapper .bootstrap-datetimepicker-widget table td.active:hover { background-color: #ecbd1c; }  
+
+#pjWrapper .bootstrap-datetimepicker-widget table td.today:before { border-color: rgba(0, 0, 0, 0.2) transparent #ecbd1c; }
+
+#pjWrapper .pjSbs-action-select .glyphicon,
+#pjWrapper .hours .hour-booked a,
+#pjWrapper .hours .hour-available a { color: #ecbd1c; }
+
+#pjWrapper .pjSbs-price { border-color: #edbd1d; background-color: #edbd1d; } 
+
+#pjWrapper .pjSbs-action-radio.active span:after,
+#pjWrapper .pjSbs-action-radio:hover span:after { background-color: #ecbd1c; }
+
+#pjWrapper .pjSbs-action-radio.active span,
+#pjWrapper .pjSbs-action-radio:hover span { border-color: #ecbd1c; }

@@ -1,0 +1,53 @@
+/* ==========================================================================
+	#General
+========================================================================== */
+#pjWrapper * { font-family: 'Oxygen', sans-serif; }
+#pjWrapper .fa { font-family: 'FontAwesome'; }
+#pjWrapper .glyphicon { font-family: 'Glyphicons Halflings'; }
+
+#pjWrapper .glyphicon,
+#pjWrapper .pjSbs-car-meta li span,
+#pjWrapper a { color: #c32816; }
+
+#pjWrapper a:hover { color: #9e2011; }
+
+#pjWrapper .btn-primary { background-color: #c32816; border-color: #9e2011; color: #fff; }
+#pjWrapper .btn-primary:hover { background-color: #9e2011; }
+
+#pjWrapper .btn-secondary,
+#pjWrapper .pjSbs-head { background-color: #134175; border-color: #103763; }
+
+#pjWrapper .btn-secondary:hover { background-color: #103763; }
+
+#pjWrapper .btn .glyphicon{ color: #c32816; }
+
+html[dir="rtl"] #pjWrapper .input-group-addon:first-child,
+#pjWrapper .form-control,
+#pjWrapper .pjSbs-body,
+#pjWrapper .btn-default { border-color: #c5c7d0; }
+
+#pjWrapper .btn,
+#pjWrapper .btn:hover { color: #fff; }
+
+#pjWrapper .pjSbs-head .btn,
+#pjWrapper .pjSbs-head .btn:hover { color: #333; }
+
+#pjWrapper .bootstrap-datetimepicker-widget table td span.active,
+#pjWrapper .bootstrap-datetimepicker-widget table td.active, 
+#pjWrapper .bootstrap-datetimepicker-widget table td.active:hover { background-color: #c32816; }  
+
+#pjWrapper .bootstrap-datetimepicker-widget table td.today:before { border-color: rgba(0, 0, 0, 0.2) transparent #c32816; }
+
+#pjWrapper .hours .hour-booked { border-color: #103763; }
+#pjWrapper .hours .hour-booked a { color: #fff; background-color: #134175; }
+
+#pjWrapper .pjSbs-action-select .glyphicon,
+#pjWrapper .hours .hour-available a { color: #c32816; }
+
+#pjWrapper .pjSbs-price { border-color: #c32816; background-color: #c32816; color: #fff;} 
+
+#pjWrapper .pjSbs-action-radio.active span:after,
+#pjWrapper .pjSbs-action-radio:hover span:after { background-color: #c32816; }
+
+#pjWrapper .pjSbs-action-radio.active span,
+#pjWrapper .pjSbs-action-radio:hover span { border-color: #c32816; }

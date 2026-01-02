@@ -1,0 +1,18 @@
+@CHARSET "UTF-8";
+.ui-widget {
+    font-family: inherit;
+    font-size: inherit;
+}
+.ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button {
+    font-family: inherit;
+    font-size: inherit;
+}
+.install-view{
+	background: url(../img/install-view.png) 0 0 no-repeat;
+	display: inline-block;
+	width: 23px;
+	height: 24px;
+}
+.install-view:hover{
+	background-position: 0 -24px;
+}

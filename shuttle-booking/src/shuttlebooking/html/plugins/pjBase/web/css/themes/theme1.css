@@ -1,0 +1,337 @@
+/* Primary
+
+11511a - Primary 
+fc801c - Secondary
+
+16842d - ligher
+
+36703E - light
+
+11511a - dark
+
+062b0b - super dark
+
+*/
+::-webkit-scrollbar-thumb {
+    background-color: #11511a ;
+}
+
+.navbar-default .landing_link a:hover {
+  background: #11511a !important;
+}
+
+.navbar-default .special_link a,
+.navbar-default .landing_link a,
+.top-navigation .navbar-brand,
+.pace .pace-progress,
+.jvectormap-zoomin,
+.jvectormap-zoomout,
+.jvectormap-goback,
+.open-small-chat,
+.open-small-chat:hover,
+.small-chat-box .content .chat-message.active,
+.landing-page .navbar-default .navbar-brand,
+.landing-page .navy-section,
+.landing-page .social-icon a,
+.landing-page li.pricing-title,
+.table-car-availability .table > thead > tr >.day-today { background: #11511a; }
+
+.btn-primary.disabled,
+.btn-primary.disabled:hover,
+.btn-primary.disabled:focus,
+.btn-primary.disabled:active,
+.btn-primary.disabled.active,
+.btn-primary[disabled],
+.btn-primary[disabled]:hover,
+.btn-primary[disabled]:focus,
+.btn-primary[disabled]:active,
+.btn-primary.active[disabled],
+fieldset[disabled] .btn-primary,
+fieldset[disabled] .btn-primary:hover,
+fieldset[disabled] .btn-primary:focus,
+fieldset[disabled] .btn-primary:active,
+fieldset[disabled] .btn-primary.active,
+.btn-info,
+.fc-state-active,
+.fc-event,
+.fc-agenda .fc-event-time,
+.fc-event a,a.list-group-item.active,
+a.list-group-item.active:hover,
+a.list-group-item.active:focus,
+.stream .stream-badge i.bg-primary,
+.stream .stream-badge i.bg-info,
+.panel-primary > .panel-heading,
+.panel-info > .panel-heading {
+  background-color: #11511a;
+  border-color: #11511a;
+}
+
+.onoffswitch-label,
+.onoffswitch-switch,
+.onoffswitch-label,
+.onoffswitch-switch {
+  border: 2px solid #11511a;
+}
+
+.select2-container--default.select2-container--focus .select2-selection--single,
+.select2-container--default.select2-container--focus .select2-selection--multiple,
+.panel-primary,
+.panel-info,
+.payment:hover,
+.form-control:focus,
+.single-line:focus,
+.has-success .form-control,
+.has-success .form-control:focus {
+  border-color: #11511a;
+}
+
+.noUi-connect {
+  background: none repeat scroll 0 0 #11511a;
+}
+
+.inspinia-notify.alert-info {
+  border-left: 6px solid #11511a;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: #11511a !important;
+}
+
+.dropzone {
+  border: 1px dashed #11511a;
+}
+
+.agile-list li.success-element {
+  border-left: 3px solid #11511a;
+}
+
+.feed-element-icon,
+.landing-page .testimonials,
+.dropdown-menu > .active > a,
+.dropdown-menu > .active > a:focus,
+.dropdown-menu > .active > a:hover,
+body.mini-navbar .nav-header,
+.navbar-toggle,
+.onoffswitch-inner:before,
+.label-primary,
+.badge-primary,
+.label-info,
+.badge-info,
+.onoffswitch-inner:before,
+.toast,
+.toast-success,
+.toast-info,
+.select2-container--default .select2-results__option--highlighted[aria-selected],
+.ui-select-container.ui-select-bootstrap .ui-select-choices-row.active > a,
+.navy-bg,
+.bg-primary,
+.lazur-bg,
+.bg-info,
+.progress-bar,
+.progress-bar-info,
+.product-price,
+.sk-spinner-rotating-plane.sk-spinner,
+.sk-spinner-double-bounce .sk-double-bounce1,
+.sk-spinner-double-bounce .sk-double-bounce2,
+.sk-spinner-wave div,
+.sk-spinner-wandering-cubes .sk-cube1,
+.sk-spinner-wandering-cubes .sk-cube2,
+.sk-spinner-pulse.sk-spinner,
+.sk-spinner-chasing-dots .sk-dot1,
+.sk-spinner-chasing-dots .sk-dot2,
+.sk-spinner-three-bounce div,
+.sk-spinner-circle .sk-circle:before,
+.sk-spinner-cube-grid .sk-cube,
+.sk-spinner-wordpress.sk-spinner {
+  background-color: #11511a;
+}
+
+.navbar-default .special_link a span.label,
+.navbar-default .landing_link a span.label,
+.top-navigation .navbar-nav .dropdown-menu > .active > a,
+.top-navigation .nav > li a:hover,
+.top-navigation .nav > li a:focus,
+.top-navigation .nav > li.active > a,
+.btn-primary.btn-outline,
+.btn-success.btn-outline,
+.btn-info.btn-outline,
+.btn-link:hover,
+.btn-link:focus,
+.btn-link:active,
+.btn-link.active,
+.open .dropdown-toggle.btn-link,
+.has-success .control-label,
+.forum-item.active .fa,
+.forum-item.active a.forum-item-title,
+.vertical-date small,
+.text-navy,
+.text-info,
+.category-list li a .text-navy,
+.category-list li a .text-primary,
+.category-list li a .text-info,
+.file-list li a:hover,
+.faq-question,
+.issue-tracker .btn-link,
+.product-name:hover,
+.product-name:focus,
+.vote-actions a,
+.vote-info a:hover,
+.vote-icon.active,
+.sk-spinner-fading-circle .sk-circle:before,
+.landing-page span.navy,
+.landing-page a.navy-link,
+.landing-page .navbar-default .navbar-nav > li > a:hover,
+.landing-page .navbar-default .navbar-nav > li > a:focus,
+.landing-page .navbar-scroll.navbar-default .nav li a:hover,
+.landing-page .features small,
+.landing-page .features-icon,
+.landing-page .pricing-plan .pricing-price span,
+.navbar-minimalize,
+a,
+.device-view,
+.add-field-list li .fa,
+.expired-head h2,
+.expired-body p,
+.coming-soon p,
+.chat-user,
+.chat-user:hover,
+.chat-user.active a { color: #11511a; }
+
+.landing-page .navy-line {
+  border-bottom: 2px solid #11511a;
+}
+
+.landing-page .navbar-default .navbar-nav > .active > a,
+.landing-page .navbar-default .navbar-nav > .active > a:hover,
+.landing-page .navbar-default .navbar-nav > .active > a,
+.landing-page .navbar-default .navbar-nav > .active > a:hover {
+  border-top: 6px solid #11511a;
+}
+
+.landing-page .features .big-icon {
+  color: #11511a !important;
+}
+
+.landing-page .btn-primary {
+  background-color: #11511a;
+  border-color: #11511a;
+}
+
+.btn-primary { background-color: #0a5114; border-color: #0a5114; color: #FFFFFF; }
+
+.navbar-minimalize:hover,
+.navbar-minimalize:focus,
+.navbar-minimalize:active:focus { color: #36703E; }
+
+.page-heading .breadcrumb a:hover { color: #16842d; }
+
+.btn-primary.active.focus, 
+.btn-primary.active:focus, 
+.btn-primary.active:hover, 
+.btn-primary.focus:active, 
+.btn-primary:active:focus, 
+.btn-primary:active:hover, 
+.open > .dropdown-toggle.btn-primary.focus, 
+.open > .dropdown-toggle.btn-primary:focus, 
+.open > .dropdown-toggle.btn-primary:hover { background-color: #16842d; border-color: #16842d; }
+
+.pagination > li > a:hover,
+.pagination > li > span:hover,
+.pagination > li > a:focus,
+.pagination > li > span:focus,
+a:hover { color: #16842d; }
+
+.nav.navbar-top-links a:hover { color: #16842d; }
+
+.modified-layout .fa-angle-double-right { color: #16842d; }
+
+.forum-item a:hover,
+.forum-item .fa { color: #16842d; }
+
+.jumbotron-secondary:after { background-color: #11511a; color: #fff; }
+
+.ct-thumbnail.active,
+.ct-thumbnail:hover { border-color: #11511a; }
+.ct-thumbnail-badge { background-color: #11511a; text-align: center; color: #fff; }
+
+.label-primary[href]:focus, 
+.label-primary[href]:hover,
+.label-primary:hover { background-color: #16842d; }
+
+.portal:hover { border-color: #16842d; }
+.need-portal { border-color: #11511a; }
+.need-portal:hover { background-color: #11511a; border-color: #11511a; }
+
+.header { background-color: #11511a; }
+
+.sweet-alert .sa-button-container .confirm { background-color: #0a5114!important; box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px inset!important; }
+.sweet-alert .sa-button-container .confirm:hover { background-color: #36703E!important; } 
+
+.alert-info { color: #11511a; border-color: rgba(0,0,0,0.1); background-color: #d2dfd4; }
+.alert-info a { color: #062b0b; }
+.alert-info a:hover { color: #0b6d19; }
+
+.wizard > .steps .done a,
+.wizard > .steps .done a:hover,
+.wizard > .steps .done a:active,
+.wizard > .actions a,
+.wizard > .actions a:hover,
+.wizard > .actions a:active,
+.wizard > .steps .current a,
+.wizard > .steps .current a:hover,
+.wizard > .steps .current a:active { background-color: #11511a; }
+
+.wizard > .actions a:focus { background-color: #fff; color: #11511a; }
+
+.login-img-background:after { background: -webkit-linear-gradient(49deg, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 50%,rgba(0,49,7,0.9) 50.5%,rgba(0,49,7,0.9) 100%); background: linear-gradient(to left bottom, rgba(0,49,7,.9) 0%, rgba(0,49,7,.9) 50%, rgba(255,255,255,1) 50.1%, rgba(255,255,255,1) 50%); }
+
+.datepicker table tr td span.active:active, 
+.datepicker table tr td span.active:hover:active, 
+.datepicker table tr td span.active.active, 
+.datepicker table tr td span.active:hover.active, 
+.datepicker table tr td.active:active, 
+.datepicker table tr td.active:hover:active, 
+.datepicker table tr td.active.active, 
+.datepicker table tr td.active:hover.active { background: #0a5114; color: #fff; }
+
+.bar-top,
+.nav-header,
+body { background-color: #08250C; }
+
+.mini-navbar .nav .nav-second-level,
+ul.nav-second-level,
+.navbar-default .nav > li > a:hover, 
+.navbar-default .nav > li > a:focus,
+.nav > li.active { background-color: #0A2D0F; }
+
+.bg-completed { background-color: #0A2D0F; border-color: #0A2D0F; color: #fff; }
+.color-completed { color: #0A2D0F; }
+
+/* Secondary */
+
+a.thumbnail.active, 
+a.thumbnail:focus, 
+a.thumbnail:hover { border-color: #fc801c; }
+
+.bar-top a:hover,
+.device-view.active:hover,
+.device-view.active { color: #fc801c; }
+
+.widget-bg { background-color: #11511a; }
+
+.bar-top .btn-secondary { color: #fc801c; }
+.bar-top .btn-secondary:hover { color: #fff; }
+
+.btn-secondary,
+.btn-secondary:hover { border-color: #fc801c; color: #fc801c; }
+
+.btn-primary.btn-outline { background: transparent; }
+.btn-primary.btn-outline:hover { background-color: #11511a; color: #fff; }
+
+a.btn-primary,
+.btn-primary { color: #fff; }
+
+.metismenu.nav > li.active {
+  border-left: 6px solid #fc801c;
+}
