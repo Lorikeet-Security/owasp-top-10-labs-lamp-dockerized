@@ -15,6 +15,7 @@ A collection of 10 vulnerable LAMP stack lab environments for practicing web app
 | shuttle-booking | — |
 | splinter | — |
 | texas-ranger | — |
+| ticket | — |
 
 ## Requirements
 
@@ -45,11 +46,13 @@ These labs contain intentionally vulnerable applications for educational purpose
 
 ## License
 
-**Proprietary - All Rights Reserved**
+**Confidential & Proprietary - All Rights Reserved**
 
-This repository and its contents are the intellectual property of Parrot Pentest LLC (dba Parrot CTFs). Unauthorized copying, distribution, or use of this software is strictly prohibited.
+This repository contains proprietary software owned by Parrot Pentest LLC (dba Parrot CTFs). All rights reserved. Any unauthorized use, reproduction, modification, or distribution is strictly forbidden without express written consent.
+
+Licensed usage is available through formal Statement of Work (SOW) agreements only.
 
 ---
 
-© Parrot CTFs | [parrot-ctfs.com](https://parrot-ctfs.com)
+© Parrot CTFs 2026 | [parrot-ctfs.com](https://parrot-ctfs.com)
 
