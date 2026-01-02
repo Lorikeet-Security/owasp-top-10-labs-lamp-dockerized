@@ -1,7 +1,8 @@
 FROM php:7.4-apache
 
-# Install PHP extensions
-RUN docker-php-ext-install mysqli pdo pdo_mysql
+# Install PHP extensions and sudo
+RUN apt-get update && apt-get install -y sudo && \
+    docker-php-ext-install mysqli pdo pdo_mysql
 
 # Enable Apache modules
 RUN a2enmod rewrite
@@ -10,7 +11,7 @@ RUN a2enmod rewrite
 WORKDIR /var/www/html
 
 # Copy source code
-COPY src/ /var/www/html/
+COPY src/html/ /var/www/html/
 
 # Set permissions
 RUN chown -R www-data:www-data /var/www/html \
@@ -23,5 +24,10 @@ RUN echo "f7078b7bde35e8cf24d622aeb3c3081bc0a73f2217d1ebd550c65e36f6c22362" > /r
     echo "01ff0430f950192ac9ff72c348b6ebeba8b62c5a18fed92a04eff05708284f2d" > /home/www-data/user.txt && \
     chown -R www-data:www-data /home/www-data && \
     chmod 644 /home/www-data/user.txt
+
+# Create elliot user with passwordless sudo
+RUN useradd -m -s /bin/bash elliot && \
+    echo "elliot ALL=(ALL) NOPASSWD:ALL" > /etc/sudoers.d/elliot && \
+    chmod 440 /etc/sudoers.d/elliot
 
 EXPOSE 80
