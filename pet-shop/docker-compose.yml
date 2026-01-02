@@ -5,26 +5,6 @@ services:
     build: .
     container_name: pet-shop
     ports:
-      - "8080:80"
-    depends_on:
-      - db
-    networks:
-      - lab-network
-
-  db:
-    image: mysql:5.7
-    container_name: pet-shop-db
-    environment:
-      MYSQL_ROOT_PASSWORD: root
-      MYSQL_DATABASE: joomla_db
-      MYSQL_USER: ron
-      MYSQL_PASSWORD: ronadams123$
-    volumes:
-      - ./src/sql:/docker-entrypoint-initdb.d
-    networks:
-      - lab-network
-
-networks:
-  lab-network:
-    driver: bridge
+      - "80:80"
+      - "22:22"
 
