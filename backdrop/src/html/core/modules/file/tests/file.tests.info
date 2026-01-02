@@ -1,0 +1,142 @@
+[FileTaxonomyTermTestCase]
+name = Taxonomy term file test
+description = Tests adding a file to a non-node entity.
+group = File
+file = file.test
+
+[FileManagedFileElementTestCase]
+name = Managed file element test
+description = Tests the managed_file element type.
+group = File
+file = file.test
+
+[FileFieldWidgetTestCase]
+name = File field widget test
+description = Tests the file field widget, single and multi-valued, with and without AJAX, with public and private files.
+group = File
+file = file.test
+
+[FileFieldRevisionTestCase]
+name = File field revision test
+description = Test creating and deleting revisions with files attached.
+group = File
+file = file.test
+
+[FileFieldDisplayTestCase]
+name = File field display tests
+description = Test the display of file fields in node and views.
+group = File
+file = file.test
+
+[FileFieldValidateTestCase]
+name = File field validation tests
+description = Tests validation functions such as file type, max file size, max size per node, and required.
+group = File
+file = file.test
+
+[FileFieldPathTestCase]
+name = File field file path tests
+description = Test that files are uploaded to the proper location with token support.
+group = File
+file = file.test
+
+[FileTokenReplaceTestCase]
+name = File token replacement
+description = Generates text using placeholders for dummy content to check file token replacement.
+group = File
+file = file.test
+
+[FilePrivateTestCase]
+name = Private file test
+description = Uploads a test to a private node and checks access.
+group = File
+file = file.test
+
+[FileFieldAnonymousSubmission]
+name = File field anonymous submission
+description = Test anonymous file field submission.
+group = File
+file = file.test
+
+[FileUploadWizardTestCase]
+name = File upload wizard
+description = Upload a file using the multi-step wizard.
+group = File
+file = file.test
+
+[FileAdminTestCase]
+name = File administration
+description = Test file administration page functionality.
+group = File
+file = file.test
+
+[FileTestHelper]
+name = FileTestHelper
+description = FileTestHelper
+group = File
+file = file.test
+
+[FileFileTypeClassificationTestCase]
+name = File classification
+description = Test existing file entity classification functionality.
+group = File
+file = file.test
+
+[FileUnitTestCase]
+name = File unit tests
+description = Test basic file entity functionality.
+group = File
+file = file.test
+
+[FileEditTestCase]
+name = File edit
+description = Create a file and test file edit functionality.
+group = File
+file = file.test
+
+[FileUsageTestCase]
+name = File usage page
+description = Create a file and verify its usage.
+group = File
+file = file.test
+
+[FileChangeSchemeTestCase]
+name = Changing file scheme
+description = Test changing the scheme of a file.
+group = File
+file = file.test
+
+[FileReplaceTestCase]
+name = File replacement
+description = Test file replace functionality.
+group = File
+file = file.test
+
+[FileTypeTestCase]
+name = File types
+description = Test the file entity types.
+group = File
+file = file.test
+
+[FileAccessTestCase]
+name = File access
+description = Test the access aspects of file entity.
+group = File
+file = file.test
+
+[FileAccessFunctionsAlignedTestCase]
+name = File access functions aligned
+description = Test that file access functions return consistent values.
+group = File
+file = file.test
+
+[FileAttributeOverrideTestCase]
+name = File attribute override
+description = Test overriding file entity attributes.
+group = File
+file = file.test
+
+; Added by Backdrop CMS packaging script on 2024-03-07
+project = backdrop
+version = 1.27.1
+timestamp = 1709862662

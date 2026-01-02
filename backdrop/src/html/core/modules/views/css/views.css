@@ -1,0 +1,118 @@
+.views-exposed-form .views-exposed-widget,
+.views-bulk-form .form-item,
+.views-bulk-form .form-actions {
+  display: inline-block;
+  padding: .5em 1em 0 0; /* LTR */
+}
+[dir="rtl"] .views-exposed-form .views-exposed-widget,
+[dir="rtl"] .views-bulk-form .form-item,
+[dir="rtl"] .views-bulk-form .form-actions {
+  padding: .5em 0 0 1em;
+}
+
+.views-exposed-form .form-item,
+.views-exposed-form .form-submit {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.views-exposed-form label {
+  font-weight: bold;
+}
+
+.views-exposed-widgets {
+  margin-bottom: .5em;
+}
+
+.views-bulk-form .form-item,
+.views-bulk-form .form-actions,
+.views-bulk-form .form-submit {
+  display: inline-block;
+  vertical-align: bottom;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.views-bulk-form {
+  margin-bottom: 1em;
+}
+
+/* table style column align */
+.views-align-left {
+  text-align: left;
+}
+.views-align-right {
+  text-align: right;
+}
+.views-align-center {
+  text-align: center;
+}
+
+/* Views grid styles */
+
+.views-view-grid {
+  display: -ms-grid;
+  display: grid;
+}
+.views-view-grid-cols-1 {
+  -ms-grid-columns: (1fr)[1];
+  grid-template-columns: repeat(1, 1fr);
+}
+.views-view-grid-cols-2 {
+  -ms-grid-columns: (1fr)[2];
+  grid-template-columns: repeat(2, 1fr);
+}
+.views-view-grid-cols-3 {
+  -ms-grid-columns: (1fr)[3];
+  grid-template-columns: repeat(3, 1fr);
+}
+.views-view-grid-cols-4 {
+  -ms-grid-columns: (1fr)[4];
+  grid-template-columns: repeat(4, 1fr);
+}
+.views-view-grid-cols-5 {
+  -ms-grid-columns: (1fr)[5];
+  grid-template-columns: repeat(5, 1fr);
+}
+.views-view-grid-cols-6 {
+  -ms-grid-columns: (1fr)[6];
+  grid-template-columns: repeat(6, 1fr);
+}
+.views-view-grid-cols-7 {
+  -ms-grid-columns: (1fr)[7];
+  grid-template-columns: repeat(7, 1fr);
+}
+.views-view-grid-cols-8 {
+  -ms-grid-columns: (1fr)[8];
+  grid-template-columns: repeat(8, 1fr);
+}
+.views-view-grid-cols-9 {
+  -ms-grid-columns: (1fr)[9];
+  grid-template-columns: repeat(9, 1fr);
+}
+.views-view-grid-cols-10 {
+  -ms-grid-columns: (1fr)[10];
+  grid-template-columns: repeat(10, 1fr);
+}
+.views-view-grid-cols-11 {
+  -ms-grid-columns: (1fr)[11];
+  grid-template-columns: repeat(11, 1fr);
+}
+.views-view-grid-cols-12 {
+  -ms-grid-columns: (1fr)[12];
+  grid-template-columns: repeat(12, 1fr);
+}
+.views-view-grid .views-row, .views-view-grid .views-grid-box {
+  padding: 1rem;
+  border: 1px solid #cccccc;
+}
+
+/* Remove the border on tbody that system puts in */
+/* Deprecated */
+.views-view-grid tbody {
+  border-top: none;
+}
+
+.view .progress-disabled {
+  float: none;
+}

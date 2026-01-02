@@ -1,0 +1,8 @@
+<?php
+
+/**
+ * Implements hook_install().
+ */
+function actions_loop_test_install() {
+  module_set_weight('actions_loop_test', 1);
+}

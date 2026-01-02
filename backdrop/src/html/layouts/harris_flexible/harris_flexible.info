@@ -1,0 +1,33 @@
+type = layout
+name = Harris Flexible
+version = BACKDROP_VERSION
+backdrop = 1.x
+
+; Specify regions for this layout.
+regions[header]     = Header
+regions[top]        = Top
+regions[content]    = Content
+regions[sidebar]    = First Sidebar
+regions[sidebar2]   = Second Sidebar
+regions[bottom]     = Bottom
+regions[footer]     = Footer
+
+; The default region automatically receives the "Main Content" block if needed.
+default region = content
+
+; Include a file for special preprocessing of this layout's variables.
+; file = harris_flexible.php
+
+; Default stylesheets for this layout
+; stylesheets[all][] = harris_flexible.css
+
+; Preview
+preview = harris_flexible.png
+
+; Include the Bootstrap4 Grid System
+libraries[] = bootstrap4-gs
+
+; Added by Backdrop CMS packaging script on 2022-01-23
+project = harris_flexible
+version = 1.x-1.0.0
+timestamp = 1642984712

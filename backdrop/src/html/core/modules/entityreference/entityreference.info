@@ -1,0 +1,14 @@
+name = Entity Reference
+description = Defines a field type for referencing from other entities, such as content, users, taxonomy terms, and files.
+package = Fields
+backdrop = 1.x
+type = module
+version = BACKDROP_VERSION
+
+dependencies[] = field
+dependencies[] = entity
+
+; Added by Backdrop CMS packaging script on 2024-03-07
+project = backdrop
+version = 1.27.1
+timestamp = 1709862662

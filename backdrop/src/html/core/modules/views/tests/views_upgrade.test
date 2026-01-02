@@ -1,0 +1,135 @@
+<?php
+/**
+ * @file
+ * Definition of ViewsUpgradeTestCase.
+ */
+
+require_once BACKDROP_ROOT . '/core/modules/views/tests/views_query.test';
+
+/**
+ * Try to test the upgrade path of all conversions.
+ *
+ * You can find all conversions by searching for "moved to".
+ */
+class ViewsUpgradeTestCase extends ViewsSqlTest {
+  function viewsData() {
+    $data = parent::viewsData();
+    $data['views_test']['old_field_1']['moved to'] = array('views_test', 'id');
+    $data['views_test']['old_field_2']['field']['moved to'] = array('views_test', 'name');
+    $data['views_test']['old_field_3']['filter']['moved to'] = array('views_test', 'age');
+
+    // @todo Test this scenario, too.
+    $data['views_old_table_2']['old_field']['moved to'] = array('views_test', 'job');
+
+    $data['views_old_table']['moved to'] = 'views_test';
+
+    return $data;
+  }
+
+  function debugField($field) {
+    $keys = array('id', 'table', 'field', 'actual_field', 'original_field', 'real_field');
+    $info = array();
+    foreach ($keys as $key) {
+      $info[$key] = $field->{$key};
+    }
+    debug($info, NULL, TRUE);
+  }
+
+  /**
+   * Tests the moved to parameter in general.
+   */
+  public function testMovedTo() {
+    // Test moving on field level.
+    $view = $this->viewsMovedToField();
+    $view->update();
+    $view->build();
+
+    $this->assertEqual('id', $view->field['old_field_1']->real_field);
+    $this->assertEqual('views_test', $view->field['old_field_1']->table);
+    $this->assertEqual('old_field_1', $view->field['old_field_1']->original_field, 'The field should have stored the original_field');
+
+    // Test moving on handler level.
+    $view = $this->viewsMovedToHandler();
+    $view->update();
+    $view->build();
+
+    $this->assertEqual('name', $view->field['old_field_2']->real_field);
+    $this->assertEqual('views_test', $view->field['old_field_2']->table);
+
+    $this->assertEqual('age', $view->filter['old_field_3']->real_field);
+    $this->assertEqual('views_test', $view->filter['old_field_3']->table);
+
+    // Test moving on table level.
+    $view = $this->viewsMovedToTable();
+    $view->update();
+    $view->build();
+
+    $this->assertEqual('views_test', $view->base_table, 'Make sure that view->base_table gets automatically converted.');
+    $this->assertEqual('id', $view->field['id']->real_field, 'To run the query right the real_field has to be set right.');
+    $this->assertEqual('views_test', $view->field['id']->table);
+  }
+
+  public function viewsMovedToField() {
+    $view = new view;
+    $view->name = 'test_views_move_to_field';
+    $view->description = '';
+    $view->tag = '';
+    $view->base_table = 'views_test';
+    $view->is_cacheable = FALSE;
+    $view->api_version = 2;
+    $view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
+
+    /* Display: Default */
+    $handler = $view->new_display('default', 'Default', 'default');
+
+    $handler->display->display_options['fields']['old_field_1']['id'] = 'old_field_1';
+    $handler->display->display_options['fields']['old_field_1']['table'] = 'views_test';
+    $handler->display->display_options['fields']['old_field_1']['field'] = 'old_field_1';
+
+    return $view;
+  }
+
+  public function viewsMovedToHandler() {
+    $view = new view;
+    $view->name = 'test_views_move_to_handler';
+    $view->description = '';
+    $view->tag = '';
+    $view->base_table = 'views_test';
+    $view->is_cacheable = FALSE;
+    $view->api_version = 2;
+    $view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
+
+    /* Display: Default */
+    $handler = $view->new_display('default', 'Default', 'default');
+
+    $handler->display->display_options['fields']['old_field_2']['id'] = 'old_field_2';
+    $handler->display->display_options['fields']['old_field_2']['table'] = 'views_test';
+    $handler->display->display_options['fields']['old_field_2']['field'] = 'old_field_2';
+
+    $handler->display->display_options['filters']['old_field_3']['id'] = 'old_field_3';
+    $handler->display->display_options['filters']['old_field_3']['table'] = 'views_test';
+    $handler->display->display_options['filters']['old_field_3']['field'] = 'old_field_3';
+
+    return $view;
+  }
+
+  public function viewsMovedToTable() {
+    $view = new view;
+    $view->name = 'test_views_move_to_table';
+    $view->description = '';
+    $view->tag = '';
+    $view->base_table = 'views_old_table';
+    $view->is_cacheable = FALSE;
+    $view->api_version = 2;
+    $view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
+
+    /* Display: Default */
+    $handler = $view->new_display('default', 'Default', 'default');
+
+    $handler->display->display_options['fields']['id']['id'] = 'id';
+    $handler->display->display_options['fields']['id']['table'] = 'views_old_table';
+    $handler->display->display_options['fields']['id']['field'] = 'id';
+
+    return $view;
+  }
+}

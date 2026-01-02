@@ -1,0 +1,52 @@
+[DateUITestCase]
+name = Date Field UI
+description = Test creation of various date fields and widgets using Field UI
+group = Date
+file = date.test
+
+[DateFieldTestCase]
+name = Date Field
+description = Test date field settings and Start/End date interaction.
+group = Date
+file = date_field.test
+
+[DateFieldTokenTestCase]
+name = Date Field Token
+description = Test the date field token replacements.
+group = Date
+file = date_field.test
+
+[DateTimezoneTestCase]
+name = Date Timezone & Granularity
+description = Test combinations of date field timezone handling and granularity.
+group = Date
+file = date_timezone.test
+
+[DateValidationTestCase]
+name = Date Validation
+description = Test date validation.
+group = Date
+file = date_validation.test
+
+[DateViewsTestCase]
+name = Date Views
+description = Tests exposed date filters in Views.
+group = Date
+file = date_views.test
+
+[DateAPITestCase]
+name = Date API tests
+description = Test Date API functions.
+group = Date
+file = date_api.test
+
+[DateThemeTestCase]
+name = Date Theme
+description = Test date theme functions.
+group = Date
+file = date_themes.test
+
+; Added by Backdrop CMS packaging script on 2024-03-07
+project = backdrop
+version = 1.27.1
+timestamp = 1709862662
