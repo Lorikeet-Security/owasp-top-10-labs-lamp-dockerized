@@ -1,0 +1,20 @@
+<link rel = "stylesheet" type = "text/css" href = "style.css">
+<script src="script.js"></script>
+<div class="login-page">
+  <div class="form">
+    <img src = "/ecorp.png"><br><br>
+    <form class="register-form">
+      <input type="text" placeholder="name"/>
+      <input type="password" placeholder="password"/>
+      <input type="text" placeholder="email address"/>
+      <button>create</button>
+      <p class="message">Already registered? <a href="#">Sign In</a></p>
+    </form>
+    <form action="/api/login.php" method="post" class="login-form">
+      <input type="text" name="username" placeholder="username"/>
+      <input type="password" name="password" placeholder="password"/>
+      <button>login</button>
+      <p class="message">Not registered? <a href="/signup.php">Create an account</a></p>
+    </form>
+  </div>
+
