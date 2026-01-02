@@ -1,7 +1,9 @@
 FROM php:7.4-apache
 
-# Install PHP extensions
-RUN docker-php-ext-install mysqli pdo pdo_mysql
+# Install PHP extensions, SSH, and sudo
+RUN apt-get update && apt-get install -y openssh-server sudo && \
+    docker-php-ext-install mysqli pdo pdo_mysql && \
+    mkdir /var/run/sshd
 
 # Enable Apache modules
 RUN a2enmod rewrite
@@ -10,7 +12,7 @@ RUN a2enmod rewrite
 WORKDIR /var/www/html
 
 # Copy source code
-COPY src/ /var/www/html/
+COPY src/html/ /var/www/html/
 
 # Set permissions
 RUN chown -R www-data:www-data /var/www/html \
@@ -24,4 +26,12 @@ RUN echo "f7078b7bde35e8cf24d622aeb3c3082bc0a73f2217d1ebd550c65e36f6c22362" > /r
     chown -R www-data:www-data /home/www-data && \
     chmod 644 /home/www-data/user.txt
 
-EXPOSE 80
+# Create walker user with SSH and passwordless sudo
+RUN useradd -m -s /bin/bash walker && \
+    echo "walker:cdparkerismybestfriend123" | chpasswd && \
+    echo "walker ALL=(ALL) NOPASSWD:ALL" > /etc/sudoers.d/walker && \
+    chmod 440 /etc/sudoers.d/walker
+
+EXPOSE 80 22
+
+CMD service ssh start && apache2-foreground
