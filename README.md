@@ -4,18 +4,18 @@ A collection of 10 vulnerable LAMP stack lab environments for practicing web app
 
 ## Labs Included
 
-| Lab | Description |
-|-----|-------------|
-| abbys-lab | — |
-| blogger | — |
-| dentist-office | — |
-| file-ception | — |
-| mr-robot | — |
-| pet-shop | — |
-| shuttle-booking | — |
-| splinter | — |
-| texas-ranger | — |
-| ticket | — |
+| Lab | Description | Root Flag | User Flag |
+|-----|-------------|-----------|-----------|
+| abbys-lab | — || — || — |
+| blogger | — || — || — |
+| dentist-office | — || — || — |
+| file-ception | — || — || — |
+| mr-robot | — || — || — |
+| pet-shop | — || — || — |
+| shuttle-booking | — || — || — |
+| splinter | — || — || — |
+| texas-ranger | — || — || — |
+| ticket | — || — || — |
 
 ## Requirements
 
