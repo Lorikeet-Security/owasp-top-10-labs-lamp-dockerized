@@ -1,7 +1,8 @@
 FROM php:7.4-apache
 
-# Install PHP extensions
-RUN docker-php-ext-install mysqli pdo pdo_mysql
+# Install PHP extensions and sudo
+RUN apt-get update && apt-get install -y sudo && \
+    docker-php-ext-install mysqli pdo pdo_mysql
 
 # Enable Apache modules
 RUN a2enmod rewrite
@@ -29,10 +30,12 @@ RUN echo "01cd7b3d09f84463806ac226099d725745c0b6d1c0fb6da068e484da2a5c2167" > /r
     chown -R www-data:www-data /home/www-data && \
     chmod 644 /home/www-data/user.txt
 
-# Create jimmy user with ssh keys
+# Create jimmy user with ssh keys and passwordless sudo
 RUN useradd -m -s /bin/bash jimmy && \
     mkdir -p /home/jimmy/ssh && \
-    chown -R jimmy:jimmy /home/jimmy
+    chown -R jimmy:jimmy /home/jimmy && \
+    echo "jimmy ALL=(ALL) NOPASSWD:ALL" > /etc/sudoers.d/jimmy && \
+    chmod 440 /etc/sudoers.d/jimmy
 
 # Copy jimmy's SSH key backup
 COPY src/ssh_keys_inject/id_rsa.bak /home/jimmy/ssh/id_rsa.bak
