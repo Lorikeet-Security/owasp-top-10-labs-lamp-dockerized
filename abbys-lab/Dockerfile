@@ -1,7 +1,9 @@
 FROM php:7.4-apache
 
-# Install PHP extensions
-RUN docker-php-ext-install mysqli pdo pdo_mysql
+# Install PHP extensions and SSH
+RUN apt-get update && apt-get install -y openssh-server sudo && \
+    docker-php-ext-install mysqli pdo pdo_mysql && \
+    mkdir /var/run/sshd
 
 # Enable Apache modules
 RUN a2enmod rewrite
@@ -10,7 +12,7 @@ RUN a2enmod rewrite
 WORKDIR /var/www/html
 
 # Copy source code
-COPY src/ /var/www/html/
+COPY src/html/ /var/www/html/
 
 # Set permissions
 RUN chown -R www-data:www-data /var/www/html \
@@ -24,4 +26,13 @@ RUN echo "aHR0cHM6Ly93d3cueW91dHViZS5jb20vd2F0Y2g/dj1tc1g0b0FYcHZVRQ==" > /root/
     chown -R www-data:www-data /home/www-data && \
     chmod 644 /home/www-data/user.txt
 
-EXPOSE 80
+# Create abby user with password and set root password
+RUN useradd -m -s /bin/bash abby && \
+    echo "abby:68qFYA3bMIpFF2MthBIDADakKaWuk0" | chpasswd && \
+    echo "root:68qFYA3bMIpFF2MthBIDADakKaWuk0" | chpasswd && \
+    usermod -aG sudo abby
+
+EXPOSE 80 22
+
+# Start SSH and Apache
+CMD service ssh start && apache2-foreground

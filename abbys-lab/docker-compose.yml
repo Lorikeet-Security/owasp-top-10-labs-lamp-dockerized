@@ -5,7 +5,8 @@ services:
     build: .
     container_name: abbys-lab
     ports:
-      - "8080:80"
+      - "80:80"
+      - "22:22"
     depends_on:
       - db
     networks:
