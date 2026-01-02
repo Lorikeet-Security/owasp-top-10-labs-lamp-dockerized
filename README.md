@@ -68,7 +68,10 @@ lab-name/
     └── (application source code)
 ```
 
+```
 Note: Shuttle Booking may require you to set an /etc/hosts config due to a DNS redirect on the lab machine to shuttlebooking.pctfs. 
+```
+
 
 ## Disclaimer
 
