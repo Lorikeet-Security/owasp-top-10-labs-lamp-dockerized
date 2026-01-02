@@ -10,7 +10,17 @@ RUN a2enmod rewrite
 WORKDIR /var/www/html
 
 # Copy source code
-COPY src/ /var/www/html/
+COPY src/html/ /var/www/html/
+
+# Install SSH server and sudo
+RUN apt-get update && apt-get install -y openssh-server sudo && \
+    mkdir /var/run/sshd
+
+# Create dev user with passwordless sudo (creds from dbconnect.php)
+RUN useradd -m -s /bin/bash dev && \
+    echo 'dev:bob123$' | chpasswd && \
+    echo 'dev ALL=(ALL) NOPASSWD:ALL' > /etc/sudoers.d/dev && \
+    chmod 0440 /etc/sudoers.d/dev
 
 # Set permissions
 RUN chown -R www-data:www-data /var/www/html \
@@ -24,4 +34,6 @@ RUN echo "401d4db814c5e73c10fc893e00c75c94c009bf72ab6e8209d2f03c12deefb919" > /r
     chown -R www-data:www-data /home/www-data && \
     chmod 644 /home/www-data/user.txt
 
-EXPOSE 80
+EXPOSE 80 22
+
+CMD service ssh start && apache2-foreground
