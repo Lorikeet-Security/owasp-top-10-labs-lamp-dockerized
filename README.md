@@ -18,8 +18,8 @@
 |-----|---------|-------------|:----------:|
 | **Abby's Lab** | <img src="https://s3.parrot-ctfs.com/hacking/machines/abby_lab_capture_the_flag.png" width="80"/> | Break through Abby's IPS to breach her system. | Hard |
 | **Blogger** | <img src="https://s3.parrot-ctfs.com/hacking/machines/blogger_hacking_labs_capture_the_flag.png" width="80"/> | Perform a penetration test against this blog. | Medium |
+| **Cloud Admin** | <img src="https://s3.parrot-ctfs.com/66ae0cca784ba1.74791678.png" width="80"/> | Dive into cloud security and uncover vulnerabilities in cloud and server environments. | Medium |
 | **Dentist Office** | <img src="https://s3.parrot-ctfs.com/hacking/machines/dentist_office_hacking_beginner_ctfs.png" width="80"/> | Sharpen your skills and hack this website. | Easy |
-| **File Ception** | <img src="https://s3.parrot-ctfs.com/6778ddb73b4f29.35580835.png" width="80"/> | LFI meets RCE in this cybersecurity carnival. | Easy |
 | **Mr Robot V2** | <img src="https://s3.parrot-ctfs.com/hacking/machines/mr_robot_hacking_capture_the_flag.png" width="80"/> | FSociety's task: Hack Ecorp and their employees. | Medium |
 | **Pet Shop** | <img src="https://s3.parrot-ctfs.com/hacking/machines/pet_shop_hacking_labs_capture_the_flags.png" width="80"/> | Find your way into this old, unfinished website. | Easy |
 | **Shuttle Booking** | <img src="https://s3.parrot-ctfs.com/6719cd957e7d64.07939587.png" width="80"/> | Unleash the full power of XSS. | Medium |
@@ -34,8 +34,8 @@
 |-----|-----------|-----------|
 | Abby's Lab | `aHR0cHM6Ly93d3cueW91dHViZS5jb20vd2F0Y2g/dj1tc1g0b0FYcHZVRQ==` | `Ik5vIHdheSEgSSdtIGdldHRpbmcgaGFja2VkISIgLSBBYmJ5` |
 | Blogger | `01cd7b3d09f84463806ac226099d725745c0b6d1c0fb6da068e484da2a5c2167` | `07c68b84d3f0e7475cbe1b760683f4a9c310592a7154d51e3e740a004a69478a` |
+| Cloud Admin | `6e7c0f4538ec50f4ad94b3d6951d89edf17fa0bb64a7c8271e18f8c8f26f7185s` | `c30933d39bab88fe51635d0b9b8af0fa012b3d01ac065fd5d85e248162c7f6ad` |
 | Dentist Office | `318fa5ec4d9403186175de04abbdcd96d7798a583d160d0b0c6765d2a71410fa` | `b78e381e360da323290665f09339b16f567bb42a4904895221c00fcd147f3d7b` |
-| File Ception | `PCTF{78ff1b969bded694fc1990f7d6d9d0b3}` | `PCTF{4d0380e5146ae94dd0b295c15b05bd05}` |
 | Mr Robot V2 | `f7078b7bde35e8cf24d622aeb3c3081bc0a73f2217d1ebd550c65e36f6c22362` | `01ff0430f950192ac9ff72c348b6ebeba8b62c5a18fed92a04eff05708284f2d` |
 | Pet Shop | `25eaff4f14c33c598c8c2397024f6d73263618bda147c15e7c16c3806dbd848b` | `c5f14388a245cab785def0524cf8566e505b73401441fdf6a3970493189c74a5` |
 | Shuttle Booking | `401d4db814c5e73c10fc893e00c75c94c009bf72ab6e8209d2f03c12deefb919` | `197a919c1062a25a7fec257e839142bd6a49e6ade7a51790c79ee019a78b42f0` |
