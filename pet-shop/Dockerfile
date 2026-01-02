@@ -72,7 +72,7 @@ mysql -e "GRANT ALL PRIVILEGES ON joomla_db.* TO '"'"'ron'"'"'@'"'"'localhost'"'
 mysql -e "FLUSH PRIVILEGES;" 2>/dev/null\n\
 # Import database if tables do not exist\n\
 if ! mysql -e "USE joomla_db; SHOW TABLES;" 2>/dev/null | grep -q tynvb; then\n\
-    mysql joomla_db < /var/www/html/joomla_init.sql 2>/dev/null || true\n\
+    mysql joomla_db < /opt/joomla_init.sql 2>/dev/null || true\n\
 fi\n\
 service ssh start\n\
 service apache2 start\n\
