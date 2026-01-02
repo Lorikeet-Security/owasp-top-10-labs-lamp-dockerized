@@ -68,6 +68,8 @@ lab-name/
     └── (application source code)
 ```
 
+Note: Shuttle Booking may require you to set an /etc/hosts config due to a DNS redirect on the lab machine to shuttlebooking.pctfs. 
+
 ## Disclaimer
 
 These labs contain intentionally vulnerable applications for educational purposes only. Do not deploy on production systems or publicly accessible networks.
