@@ -5,10 +5,13 @@
 </p>
 
 [![Docker](https://img.shields.io/badge/Docker-Ready-2496ED?logo=docker&logoColor=white)](https://docker.com)
-[![License](https://img.shields.io/badge/License-Proprietary-red)](LICENSE)
+[![License](https://img.shields.io/badge/License-MIT-00e5a0)](LICENSE)
 [![Labs](https://img.shields.io/badge/Labs-10-green)](https://parrot-ctfs.com)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-e8526a)](CONTRIBUTING.md)
 
 > A collection of 10 vulnerable LAMP stack lab environments for practicing web application security testing. Each lab is containerized with Docker for easy deployment and isolation.
+
+**These labs are open source and free to use.** No account, no paywall, no lab time credits. Clone the repo, start a container, and get to work.
 
 ---
 
@@ -27,9 +30,9 @@
 | **Splinter** | <img src="https://s3.parrot-ctfs.com/66eda74b8d0479.56629970.png" width="80"/> | Exploit SSTI vulnerabilities at Unemployable INC. | Easy |
 | **Texas Ranger** | <img src="https://s3.parrot-ctfs.com/hacking/machines/walker_texas_ranger_beginner_ctfs.png" width="80"/> | Yee haw! Show the Texas Rangers who's boss. | Easy |
 
+New to this? Start with **Texas Ranger**, **Pet Shop**, or **Backdrop**, then work up to **Abby's Lab**.
 
 ---
-
 
 ## Requirements
 
@@ -37,13 +40,24 @@
 - Docker Compose
 
 ## Quick Start
+
 ```bash
+git clone https://github.com/Lorikeet-Security/owasp-top-10-labs-lamp-dockerized.git
+cd owasp-top-10-labs-lamp-dockerized
+
 # Start a specific lab
 cd <lab-name>
 docker-compose up -d
 ```
 
+Tear a lab down when you are finished with it:
+
+```bash
+docker-compose down -v
+```
+
 ## Lab Structure
+
 ```
 lab-name/
 ├── docker-compose.yml
@@ -53,26 +67,47 @@ lab-name/
 ```
 
 ```
-Note: Shuttle Booking may require you to set an /etc/hosts config due to a DNS redirect on the lab machine to shuttlebooking.pctfs. 
+Note: Shuttle Booking may require you to set an /etc/hosts config due to a DNS redirect on the lab machine to shuttlebooking.pctfs.
 ```
 
+---
 
-## Disclaimer
+## Safe Use
 
-These labs contain intentionally vulnerable applications for educational purposes only. Do not deploy on production systems or publicly accessible networks.
+These labs contain **intentionally vulnerable applications**. They are built to be broken.
+
+- Run them on an isolated host or a local VM, never on a production system
+- Do not expose them to the public internet or to any network you do not control
+- Bring them down when you are done rather than leaving them running
+- Anything you learn here applies only to systems you own or have written authorization to test
+
+## Contributing
+
+Pull requests are welcome. Useful contributions include:
+
+- Fixes to broken builds, images, or dependencies
+- New labs that follow the existing structure
+- Walkthroughs and writeups
+- Improvements to setup, documentation, or container hygiene
+
+Please do not commit real credentials, customer data, or anything that came out of a live engagement.
+
+## Community
+
+Hosted versions of these labs, leaderboards, and live CTF events run at [parrot-ctfs.com](https://parrot-ctfs.com). If your team wants a private CTF or a scored event, get in touch through [lorikeetsecurity.com](https://lorikeetsecurity.com).
 
 ## License
 
-**Confidential & Proprietary - All Rights Reserved**
+Released under the [MIT License](LICENSE).
 
-This repository contains proprietary software owned by Parrot Pentest LLC (dba Parrot CTFs). All rights reserved. Any unauthorized use, reproduction, modification, or distribution is strictly forbidden without express written consent.
+You are free to use, modify, and redistribute these labs, including commercially, for training, coursework, internal enablement, or your own CTF events. Attribution is appreciated but the only requirement is keeping the license and copyright notice intact.
 
-Licensed usage is available through formal Statement of Work (SOW) agreements only.
-
----  
+---
 <br>
 <p align="center">
   <img src="https://s3.parrot-ctfs.com/687f184745abe6.68974060.png" alt="Parrot CTFs" width="100"/>
   <br>
-  © Parrot CTFs 2026 | <a href="https://parrot-ctfs.com">parrot-ctfs.com</a>
+  © 2026 Lorikeet Corp | Parrot CTFs is a brand of Lorikeet Security
+  <br>
+  <a href="https://parrot-ctfs.com">parrot-ctfs.com</a> | <a href="https://lorikeetsecurity.com">lorikeetsecurity.com</a>
 </p>
