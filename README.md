@@ -1,4 +1,6 @@
-# OWASP Top 10 Labs - LAMP Dockerized
+<h1 align="center">
+  OWASP Top 10 Labs - LAMP Dockerized
+</h1>
 
 <p align="center">
   <img src="https://s3.parrot-ctfs.com/687f184745abe6.68974060.png" alt="Parrot CTFs Logo" width="200"/>
